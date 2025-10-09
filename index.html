@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fer Fernandez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f1a;
+      color: #f2f2f2;
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      background: radial-gradient(circle at top, #1a1a2e 0%, #0f0f1a 70%);
+      padding: 2rem;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 25px rgba(255, 255, 0, 0.2);
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #ddd;
+      margin-bottom: 1.5rem;
+    }
+    .social-links a {
+      text-decoration: none;
+      color: #f2f2f2;
+      border: 1px solid #f2f2f2;
+      padding: 0.6rem 1.2rem;
+      border-radius: 30px;
+      margin: 0.4rem;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    .social-links a:hover {
+      background-color: #f8d31c;
+      color: #0f0f1a;
+      border-color: #f8d31c;
+    }
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    section h2 {
+      color: #f8d31c;
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    iframe {
+      border-radius: 12px;
+      width: 100%;
+      height: 352px;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+      background-color: #0c0c15;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="imglinktree.png" alt="Fer Fernandez">
+    <h1>Fer Fernandez</h1>
+    <p class="subtitle">Desde Catamarca, compongo y llevo historias que viajan conmigo.</p>
+    <div class="social-links">
+      <a href="https://open.spotify.com/intl-es/artist/5sKYvbARBCdgQi2hxZHd5t?si=3PgNscTGSX2uE57Tgc-K3g" target="_blank">🎧 Spotify</a>
+      <a href="https://www.youtube.com/@FerFeernandez" target="_blank">📺 YouTube</a>
+      <a href="https://www.instagram.com/ferfernandez__/" target="_blank">📸 Instagram</a>
+    </div>
+  </header>
+
+  <section id="musica" class="fade-in">
+    <h2>Escuchá mi música</h2>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5sKYvbARBCdgQi2hxZHd5t?utm_source=generator&theme=0" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </section>
+
+  <section id="videos" class="fade-in">
+    <h2>Mirá mis videos</h2>
+    <p>Visitá mi canal para ver más contenido:</p>
+    <a href="https://www.youtube.com/@FerFeernandez" target="_blank" class="social-links"><strong>Ir al canal →</strong></a>
+  </section>
+
+  <section id="contacto" class="fade-in">
+    <h2>Contacto</h2>
+    <p>📬 <a href="mailto:contactoferfernandez@gmail.com" style="color:#f8d31c;">contactoferfernandez@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Fer Fernandez — Catamarca, Argentina 🇦🇷</p>
+  </footer>
+</body>
+</html>
